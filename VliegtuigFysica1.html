@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="CSS/blog.css" />
+    <title>Blogske</title>
+  </head>
+  <body>
+    <div class="NAVI">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a id="AboutMe">Over Mij</a></li>
+        </ul>
+        <img src="Afbeeldingen/MeMyself.jpg" class="AboutMeClass" id="AboutMe">
+      </nav>
+    </div>
+    <div class="spacing"></div>
+    <div class="content">
+    <div class="imgBeforeEntry">
+    <img src="Afbeeldingen/Vliegtuigfysica.jpg" id="Dezewerktnooit">
+    <div class="textblock">
+      <h1>Het ontvluchten van de zwaartekracht.</h1>
+      <div class="articleClass">
+        <p>Vliegtuig Fysica</p>
+      </div>
+      <div class="WriterDate">
+      <p>Door: Max van Grinsven</p>
+      <p>11/09/2018</p>
+      </div>
+    </div>
+    </div>
+    <div class="blogEntry">
+    <p><b>Om de zwaartekracht te niet te doen heb je twee krachten nodig: stuwkracht en een opwaartse kracht. De stuwkracht komt van de motor van het vliegtuig en de opwaartse kracht komt van de vleugels.</b></p>
+    <br>
+    <p><b>Opwaartse kracht:</b></p>
+    <br>
+    <p>Opwaartse kracht is de kracht die het vliegtuig als het ware “omhoog” duwt. Deze kracht wordt gegenereerd door de vorm van de vleugels.
+De opwaartse kracht(lift) is het product van twee natuurwetten: de continuïteitswet en de wet van Bernoulli. De continuïteitswet zegt: v1 * A1 = v2 * A2   dus, als het oppervlakte(A) kleiner wordt en dus vernauwt moet de snelheid groter worden anders zijn ze namelijk niet meer even.
+Als we dit effect, wat het venturi effect wordt genoemd, toepassen op een vliegtuigvleugel zien we dat een vliegtuigvleugel de luchtstroom omhoog laat afbuigen(coanda-effect). Door deze afbuiging zullen de stroombanen dichterbij elkaar komen liggen en krijg je dus het venturi effect. Dus de lucht aan de bovenkant heeft een hogere snelheid dan aan de onderkant van de vleugel. Nu wordt de wet van Bernoulli van toepassing. Deze wet stelt dat:
+P1 + 0,5*v12*ρ = P2+ 0,5*v22*ρ. Hieruit kun je opmaken dat wanneer de snelheid toeneemt de druk kleiner wordt. Gezien dat de snelheid onder de vleugel nagenoeg hetzelfde blijft zal de druk daar hetzelfde ook blijven. De snelheid aan de bovenkant neemt echter wel toe en daar neemt dus wel de druk af, je creëert zo een onderdruk en er ontstaat een opwaartse kracht(lift).
+Met deze theorie zou een vliegtuig niet ondersteboven kunnen vliegen wanneer deze zijn huidige vleugelvorm behoud.
+</p>
+<img src="Afbeeldingen/venturiafbeelding.jpg" alt="" width="100%" border-radius="10px">
+<p>
+<b>Er zijn twee verklaringen door middel van de derde wet van Newton</b>
+<br>
+Door de vorm van de vliegtuigvleugel wordt lucht naar beneden gedrukt. Door deze kracht ontstaat er een gelijke tegengestelde kracht, deze kracht noemen we dan de opwaartse kracht.
+<br>
+Wanneer een vliegtuig stil staat is de druk op de vleugels overal hetzelfde. Wanneer een vliegtuig versnelt botsen er meer luchtdeeltjes tegen de onderkant dan tegen de bovenkant dit komt omdat de vleugels altijd op een hoek staan. Omdat er meer deeltjes tegen de onderkant botsen neemt daar de druk dus toe en ontstaat er een opwaartse kracht(lift)
+</p>
+<p><b>Mijn conclusie</b></p>
+<br>
+<p>
+Na langere tijd op internet te hebben gezeten kom ik tot een conclusie. De opwaartse kracht wordt gegenereerd door een combinatie van theorie 1 en 2. De liftkracht of opwaartse kracht wordt dus gegenereerd door het drukverschil en door de afbuiging. Theorie 1 werkt goed op hoge snelheden en theorie 2 op allebei, maar zijn effect is nooit zo groot.. Als je kijkt naar het verschil in vleugels tussen snelle en wat langzamere vliegtuigen zie je dat de langzamere vliegtuigen een meer gekromde vorm hebben dan snellere vliegtuigen. Ook zie je dat bij een zwaar en snel passagiersvliegtuig de vleugels gekromd uitschuiven om toch nog de voldoende lift te creëren op een lagere snelheid. Maar waarom hebben passagiersvliegtuigen geen gekromde vorm? Een gekromde vorm geeft meer lift maar heeft veel meer luchtweerstand. Daarom is deze vorm alleen efficiënt bij lagere snelheden(Als een passagiersvliegtuig eenmaal op snelheid is worden deze ook ingeklapt).
+</p>
+</div>
+</div>
+
+<div class="PopUp" id="AboutMePopUp">
+  <div class="PopUpContent">
+  <img src="https://scontent-ams3-1.cdninstagram.com/vp/30dd5b51b8e33dc2a96be56c05aa1283/5C6D99DB/t51.2885-15/sh0.08/e35/s640x640/43198345_2173793995972913_5875411026366693376_n.jpg">
+    <h2>Over Mij</h2>
+       <p>Gutentag! Ik ben Max.
+         <br>
+         Een android fanaat in hart en nieren met een haat aan Apple.
+         <br>
+         Volg mij ook op Instagram! <a href="https://www.instagram.com/maxgrin1/" target="_blank" class="rainbow">@maxgrin1</a>
+       </p>
+   </div>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<!-- Geen link naar script.js omdat hij dan de popup niet laadde :( -->
+<script type="text/javascript">
+//Klikbaar maken AboutMe afbeelding en trigger functie: showPopUp
+document.getElementById("AboutMe").addEventListener("click", showPopUp);
+//Het laten zien van de popup.
+function showPopUp(){
+  document.getElementById('AboutMePopUp').style.display = "block"
+}
+//Ga weer weg wanneer je buiten het div vak "AboutMePopUp" klikt.
+window.onclick = function(event) {
+  if (event.target == document.getElementById('AboutMePopUp')) {
+      document.getElementById('AboutMePopUp').style.display = "none";
+    }
+}
+</script>
+  </body>
+</html>

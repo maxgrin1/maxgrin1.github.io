@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="CSS/blog.css" />
+    <title>Blogske</title>
+  </head>
+  <body>
+    <div class="NAVI">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a id="AboutMe">Over Mij</a></li>
+        </ul>
+        <img src="Afbeeldingen/MeMyself.jpg" class="AboutMeClass" id="AboutMe">
+      </nav>
+    </div>
+    <div class="spacing"></div>
+    <div class="content">
+    <div class="imgBeforeEntry">
+    <img src="Afbeeldingen/loremipsum11.jpg" id="Dezewerktnooit">
+    <div class="textblock">
+      <h1>Wat is Lorem Ipsum?</h1>
+      <div class="articleClass">
+        <p>Lorem Ipsum</p>
+      </div>
+      <div class="WriterDate">
+      <p>Door: Wikipedia Gang</p>
+      <p>22/11/2018</p>
+      </div>
+    </div>
+    </div>
+    <div class="blogEntry">
+      <p><b>Lorem ipsum is een opvultekst die drukkers, zetters, grafisch ontwerpers en dergelijken gebruiken om te kijken hoe een lay-out er grafisch uitziet.
+De reden waarom de tekst gebruikt wordt door die doelgroep is dat bij een leesbare tekst de lezer afgeleid zou worden door de inhoud, terwijl het alleen om de vormgeving gaat. Bovendien heeft het Lorem ipsum een redelijk normale afwisseling van de verschillende letters en korte en lange woorden, waardoor het beter bruikbaar is.</b></p>
+<br>
+<p class="kopje"><b>Oorsprong</b></p>
+<p>De woorden van het Lorem ipsum vinden hun oorsprong in De finibus bonorum et malorum (Over de grenzen van goed en kwaad) van Marcus Tullius Cicero uit 45 voor Christus. In alinea 1.10.32[1] van dit boek staat de volgende zinsnede:
+[32] ..., neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+Lorem ipsum is een deel van dolorem ipsum, wat "pijn zelf" betekent. In de Loeb Classical Library editie van De Finibus uit 1914 eindigt de tekst op pagina 34 met "Neque porro quisquam est qui do-" en start op pagina 36 met "lorem ipsum". Dat suggereert dat de laatste pagina daarvan het begin van de opvultekst is.</p>
+<br>
+<p class="kopje"><b>Huidig Gebruik</b></p>
+<p>Het Lorem ipsum is voornamelijk bekend omdat (een versie van) de tekst in verschillende grafische programma's of tekstverwerkers is ingebed. Van deze tekst bestaan talloze varianten, die enkel de eerste zinsnede of de opzet ervan gemeen hebben.</p>
+<br>
+<p><i>Deze tekst is schaamteloos gestolen van Wikipedia.</i></p>
+</div>
+</div>
+
+<div class="PopUp" id="AboutMePopUp">
+  <div class="PopUpContent">
+  <img src="https://scontent-ams3-1.cdninstagram.com/vp/30dd5b51b8e33dc2a96be56c05aa1283/5C6D99DB/t51.2885-15/sh0.08/e35/s640x640/43198345_2173793995972913_5875411026366693376_n.jpg">
+    <h2>Over Mij</h2>
+       <p>Gutentag! Ik ben Max.
+         <br>
+         Een android fanaat in hart en nieren met een haat aan Apple.
+         <br>
+         Volg mij ook op Instagram! <a href="https://www.instagram.com/maxgrin1/" target="_blank" class="rainbow">@maxgrin1</a>
+       </p>
+   </div>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<!-- Geen link naar script.js omdat hij dan de popup niet laadde :( -->
+<script type="text/javascript">
+//Klikbaar maken AboutMe afbeelding en trigger functie: showPopUp
+document.getElementById("AboutMe").addEventListener("click", showPopUp);
+//Het laten zien van de popup.
+function showPopUp(){
+  document.getElementById('AboutMePopUp').style.display = "block"
+}
+//Ga weer weg wanneer je buiten het div vak "AboutMePopUp" klikt.
+window.onclick = function(event) {
+  if (event.target == document.getElementById('AboutMePopUp')) {
+      document.getElementById('AboutMePopUp').style.display = "none";
+    }
+}
+</script>
+  </body>
+</html>

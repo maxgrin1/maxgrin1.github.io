@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="CSS/blog.css" />
+    <title>Blogske</title>
+  </head>
+  <body>
+    <div class="NAVI">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a id="AboutMe">Over Mij</a></li>
+        </ul>
+        <img src="Afbeeldingen/MeMyself.jpg" class="AboutMeClass" id="AboutMe">
+      </nav>
+    </div>
+    <div class="spacing"></div>
+    <div class="imgBeforeEntry">
+    <img src="Afbeeldingen/ivogastblog.jpg" id="Dezewerktnooit">
+    <div class="textblock">
+      <h1>Vroem Vroem, zweefvliegen moet je doen!</h1>
+      <div class="articleClass">
+        <p>Gast Blog:</p>
+      </div>
+      <div class="WriterDate">
+      <p>Door: Ivo Boers</p>
+      <p>14/11/2018</p>
+      </div>
+    </div>
+    </div>
+    <div class="blogEntry">
+      <p><strong>Zweefvliegen, een hobby van weinig mensen. Dat terwijl het toch wel voor mij de mooiste hobby en sport (want ja, het is een sport. We hebben op de olympische spelen van 1936 gestaan!). Je bent vrij, je gaat omhoog en het enige wat je hoort is de wind en een piep van de variometer. Je bent op jezelf aangewezen en je bepaalt zelf wat er gebeurd. Beter kan toch niet?</strong></p>
+      <br>
+      <p>Oke, dit is allemaal wel heel oppervlakkig. Misschien moet ik maar eens bij het begin beginnen. Een hele korte samenvatting van de geschiedenis van zweefvliegen: Vliegen was altijd al in de belangstelling van velen rond de 19e eeuw. Gevolg was dat veel mensen gingen klooien. George Cayley ontwierp een soort van zweefvliegtuig en dat was ook de eerste die vloog. We maken een sprongetje naar net na de eerste wereldoorlog. Het verdrag van Versailles werd gesloten en dus mocht Duitsland geen motorvliegtuigen meer bouwen. Het gevolg is dat ze maar zweefvliegtuigen gingen ontwerpen. Dit is een beetje uit de hand gelopen en daardoor zijn we uitgekomen waar we nu zijn. </p>
+      <br>
+      <p><strong>Is het een sport dan?</strong></p>
+      <p>Ja! Naast dat je nutteloos overal heen kan vliegen (wat wel heel leuk is!) bestaan er ook heuse competities, wedstrijden en een WK. Hierbij is het doel om zo snel mogelijk een zo groot mogelijke afstand af te leggen door middel van thermiek (warme lucht die opstijgt). Mocht je je afvragen hoe ver dit kan zijn: Een overlandvlucht van 100 km is redelijk normaal, gemiddeld gezien zijn er opdrachten van 50 tot 500 km. Sommige mensen gaan hier ruim overheen zoals het vrij recente vluchtje van iemand uit Nieuw-Zeeland: 13 uur non-stop vliegen met een totale afstand van 1933 km. Je moet het maar willen…
+      Even voor het idee, ik heb nu twee seizoenen gevlogen. Ik ben na 39 starts solo gegaan, wat tevens het minimaal aantal is. Mijn langste vlucht was 1 uur en 44 minuten en mijn hoogterecord is 1700 meter. In Nederland mag je maar tot de 2000 meter dus dat is niet slecht.</p>
+      <br>
+      <p><strong>Waarom ik het leuk vind?</strong></p>
+      <p>“Maar Ivo, waarom vind je het dan zo leuk om een beetje rond te vliegen?” hoor ik je al zeggen. Nou, om te beginnen. Vanaf 14 jaar mag je, na een training / opleiding te hebben gehad, al alleen vliegen. Je mag dus al eerder zweefvliegen dan scooter rijden. Los van dat is het heerlijk om alleen boven te zijn, er is niemand. Het maakt je zen, je voelt je ook wel echt los van de wereld. Jij bepaalt waar je heen gaat en wat je wilt doen. Los van dat is ook het sociale aspect iets wat het leuk maakt. Iedereen die daar vliegt doet dat omdat hij of zij vliegen leuk vindt. Je hebt dus altijd wat om over te lullen, je krijgt er in ieder geval gezellige avonden door! Daarom, daarom is zweefvliegen mijn hobby.</p>
+      <p><i>Vond je deze gastblog nou geweldig? Volg Ivo dan op Instagram!  <a href="http://instagram.com/ivo.ll/" target="_blank" class="rainbow">@ivo.ll</a></i></p>
+</div>
+
+<div class="PopUp" id="AboutMePopUp">
+  <div class="PopUpContent">
+  <img src="https://scontent-ams3-1.cdninstagram.com/vp/30dd5b51b8e33dc2a96be56c05aa1283/5C6D99DB/t51.2885-15/sh0.08/e35/s640x640/43198345_2173793995972913_5875411026366693376_n.jpg">
+    <h2>Over Mij</h2>
+       <p>Gutentag! Ik ben Max.
+         <br>
+         Een android fanaat in hart en nieren met een haat aan Apple.
+         <br>
+         Volg mij ook op Instagram! <a href="https://www.instagram.com/maxgrin1/" target="_blank" class="rainbow">@maxgrin1</a>
+       </p>
+   </div>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<!-- Geen link naar script.js omdat hij dan de popup niet laadde :( -->
+<script type="text/javascript">
+//Klikbaar maken AboutMe afbeelding en trigger functie: showPopUp
+document.getElementById("AboutMe").addEventListener("click", showPopUp);
+//Het laten zien van de popup.
+function showPopUp(){
+  document.getElementById('AboutMePopUp').style.display = "block"
+}
+//Ga weer weg wanneer je buiten het div vak "AboutMePopUp" klikt.
+window.onclick = function(event) {
+  if (event.target == document.getElementById('AboutMePopUp')) {
+      document.getElementById('AboutMePopUp').style.display = "none";
+    }
+}
+</script>
+  </body>
+</html>
